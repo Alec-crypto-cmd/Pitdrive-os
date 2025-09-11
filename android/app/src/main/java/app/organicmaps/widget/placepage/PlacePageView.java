@@ -72,6 +72,7 @@ import app.organicmaps.util.bottomsheet.MenuBottomSheetFragment;
 import app.organicmaps.util.bottomsheet.MenuBottomSheetItem;
 import app.organicmaps.widget.ArrowView;
 import app.organicmaps.widget.placepage.sections.PlacePageBookmarkFragment;
+import app.organicmaps.widget.placepage.sections.PlacePageChargeSocketsFragment;
 import app.organicmaps.widget.placepage.sections.PlacePageLinksFragment;
 import app.organicmaps.widget.placepage.sections.PlacePageOpeningHoursFragment;
 import app.organicmaps.widget.placepage.sections.PlacePagePhoneFragment;
@@ -98,6 +99,7 @@ public class PlacePageView extends Fragment
   private static final String BOOKMARK_FRAGMENT_TAG = "BOOKMARK_FRAGMENT_TAG";
   private static final String TRACK_FRAGMENT_TAG = "TRACK_FRAGMENT_TAG";
   private static final String WIKIPEDIA_FRAGMENT_TAG = "WIKIPEDIA_FRAGMENT_TAG";
+  private static final String CHARGE_SOCKETS_FRAGMENT_TAG = "CHARGE_SOCKETS_FRAGMENT_TAG";
   private static final String PHONE_FRAGMENT_TAG = "PHONE_FRAGMENT_TAG";
   private static final String OPENING_HOURS_FRAGMENT_TAG = "OPENING_HOURS_FRAGMENT_TAG";
   private static final String LINKS_FRAGMENT_TAG = "LINKS_FRAGMENT_TAG";
@@ -405,6 +407,12 @@ public class PlacePageView extends Fragment
                        R.id.place_page_opening_hours_fragment, !TextUtils.isEmpty(ohStr));
   }
 
+  private void updateChargeSocketsView()
+  {
+    updateViewFragment(PlacePageChargeSocketsFragment.class, CHARGE_SOCKETS_FRAGMENT_TAG,
+                       R.id.place_page_charge_sockets_fragment, mMapObject.hasChargeSockets());
+  }
+
   private void updatePhoneView()
   {
     updateViewFragment(PlacePagePhoneFragment.class, PHONE_FRAGMENT_TAG, R.id.place_page_phone_fragment,
@@ -663,7 +671,8 @@ public class PlacePageView extends Fragment
     if (!lastChecked.isEmpty())
     {
       String periodSinceCheck = DateUtils.getRelativePeriodString(getResources(), lastChecked);
-      UiUtils.setTextAndShow(mTvLastChecked, requireContext().getString(R.string.existence_confirmed_time_ago, periodSinceCheck));
+      UiUtils.setTextAndShow(mTvLastChecked,
+                             requireContext().getString(R.string.existence_confirmed_time_ago, periodSinceCheck));
     }
     else
       UiUtils.hide(mTvLastChecked);
@@ -700,6 +709,7 @@ public class PlacePageView extends Fragment
     updateOpeningHoursView();
     updateWikipediaView();
     updateBookmarkView();
+    updateChargeSocketsView();
     updatePhoneView();
     updateTrackView();
   }

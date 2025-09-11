@@ -879,4 +879,11 @@
     <string name="existence_confirmed_time_ago">Existence confirmée %s</string>
     <string name="hours_confirmed_time_ago">Confirmé %s</string>
     <string name="pref_tts_no_system_tts_short">Impossible de lire ce texte à voix haute, vérifiez les paramètres de l’application</string>
+    <string name="unknown_power_output">puissance inconnue</string>
+    <string name="charge_socket_type2">Type 2 (sans câble)</string>
+    <string name="charge_socket_type2_cable">Type 2 (avec câble)</string>
+    <string name="charge_socket_type2_combo">Type 2 combo</string>
+    <string name="charge_socket_type1">Type 1</string>
+    <string name="charge_socket_nacs">NACS</string>
+    <string name="charge_socket_chademo">CHAdeMO</string>
 </resources>

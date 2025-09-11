@@ -880,4 +880,11 @@
     <string name="hours_confirmed_time_ago">Confirmado %s</string>
     <string name="share_track">Compartir traza</string>
     <string name="pref_tts_no_system_tts_short">No se ha encontrado ningún motor de texto-a-voz, comprueba la configuración de la aplicación</string>
+    <string name="unknown_power_output">potencia desconocida</string>
+    <string name="charge_socket_type2">Tipo 2 (sin cable)</string>
+    <string name="charge_socket_type2_cable">Tipo 2 (con cable)</string>
+    <string name="charge_socket_type2_combo">Tipo 2 combo</string>
+    <string name="charge_socket_type1">Tipo 1</string>
+    <string name="charge_socket_nacs">NACS</string>
+    <string name="charge_socket_chademo">CHAdeMO</string>
 </resources>

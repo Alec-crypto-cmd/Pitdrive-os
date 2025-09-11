@@ -1592,6 +1592,33 @@ JNIEXPORT jstring JNICALL Java_app_organicmaps_sdk_Framework_nativeGetActiveObje
   return jni::ToJavaString(env, g_framework->GetPlacePageInfo().FormatCuisines());
 }
 
+JNIEXPORT jobjectArray JNICALL Java_app_organicmaps_sdk_Framework_nativeGetActiveObjectChargeSockets(JNIEnv * env,
+                                                                                                     jclass)
+{
+  auto sockets = g_framework->GetPlacePageInfo().GetChargeSockets();
+
+  jclass descClass = env->FindClass("app/organicmaps/sdk/bookmarks/data/ChargeSocketDescriptor");
+  jmethodID ctor = env->GetMethodID(descClass, "<init>", "(Ljava/lang/String;ID)V");
+
+  // Create a Java array
+  jobjectArray result = env->NewObjectArray(sockets.size(), descClass, nullptr);
+
+  for (size_t i = 0; i < sockets.size(); ++i)
+  {
+    auto const & s = sockets[i];
+
+    jstring jType = env->NewStringUTF(s.type.c_str());
+    jobject jDesc = env->NewObject(descClass, ctor, jType, (jint)s.count, (jdouble)s.power);
+
+    env->SetObjectArrayElement(result, i, jDesc);
+
+    env->DeleteLocalRef(jType);
+    env->DeleteLocalRef(jDesc);
+  }
+
+  return result;
+}
+
 JNIEXPORT void JNICALL Java_app_organicmaps_sdk_Framework_nativeSetVisibleRect(JNIEnv * env, jclass, jint left,
                                                                                jint top, jint right, jint bottom)
 {

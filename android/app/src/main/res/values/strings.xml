@@ -915,4 +915,12 @@
     <string name="share_track">Share Track</string>
     <string name="delete_track_dialog_title">Delete %s?</string>
     <string name="pref_tts_no_system_tts_short">No text-to-speech engine found, check the app settings</string>
+    <string name="unknown_power_output">unknown power</string>
+    <string name="charge_socket_type2">Type 2 (no cable)</string>
+    <string name="charge_socket_type2_cable">Type 2 (w/ cable)</string>
+    <string name="charge_socket_type2_combo">Type 2 combo</string>
+    <string name="charge_socket_type1">Type 1</string>
+    <string name="charge_socket_nacs">NACS</string>
+    <string name="charge_socket_chademo">CHAdeMO</string>
+    <string name="unknown_socket_type">unknown socket</string>
 </resources>
