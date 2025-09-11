@@ -42,7 +42,6 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.StyleRes;
 import androidx.annotation.UiThread;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -719,16 +718,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
   private void showPositionChooser(ChoosePositionMode mode, boolean isBusiness, boolean applyPosition)
   {
     closeFloatingToolbarsAndPanels(false);
-    if (mMapFragment != null)
-    {
-      final View mapView = mMapFragment.getView();
-      if (mapView != null)
-      {
-        int width = mapView.getWidth();
-        int height = mapView.getHeight();
-        Framework.nativeSetVisibleRect(0, 0, width, height);
-      }
-    }
+
     UiUtils.show(mPointChooser);
     mMapButtonsViewModel.setButtonsHidden(true);
     ChoosePositionMode.set(mode, isBusiness, applyPosition);
