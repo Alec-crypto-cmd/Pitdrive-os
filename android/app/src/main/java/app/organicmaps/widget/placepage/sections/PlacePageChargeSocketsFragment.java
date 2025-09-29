@@ -79,6 +79,9 @@ public class PlacePageChargeSocketsFragment extends Fragment implements Observer
     {
       View itemView = inflater.inflate(R.layout.item_charge_socket, mGrid, false);
 
+      itemView.setClickable(false);
+      itemView.setFocusable(false);
+
       MaterialTextView type = itemView.findViewById(R.id.socket_type);
       ShapeableImageView icon = itemView.findViewById(R.id.socket_icon);
       MaterialTextView power = itemView.findViewById(R.id.socket_power);

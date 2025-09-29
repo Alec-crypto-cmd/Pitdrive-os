@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Size;
 import androidx.annotation.WorkerThread;
 import app.organicmaps.sdk.Framework;
+import app.organicmaps.sdk.bookmarks.data.ChargeSocketDescriptor;
 import app.organicmaps.sdk.bookmarks.data.Metadata;
 import app.organicmaps.sdk.editor.data.FeatureCategory;
 import app.organicmaps.sdk.editor.data.Language;
@@ -62,6 +63,8 @@ public final class Editor
   public static native void nativeSetMetadata(int id, String value);
   public static native String nativeGetOpeningHours();
   public static native void nativeSetOpeningHours(String openingHours);
+  public static native ChargeSocketDescriptor[] nativeGetChargeSockets();
+  public static native void nativeSetChargeSockets(ChargeSocketDescriptor[] sockets);
   public static String nativeGetPhone()
   {
     return nativeGetMetadata(Metadata.MetadataType.FMD_PHONE_NUMBER.toInt());

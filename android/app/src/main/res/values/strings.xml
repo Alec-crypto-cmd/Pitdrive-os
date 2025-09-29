@@ -913,7 +913,7 @@
     <string name="share_track">Share Track</string>
     <string name="delete_track_dialog_title">Delete %s?</string>
     <string name="pref_tts_no_system_tts_short">No text-to-speech engine found, check the app settings</string>
-    <string name="unknown_power_output">unknown power</string>
+    <string name="unknown_power_output">unknown</string>
     <string name="charge_socket_type2">Type 2 (no cable)</string>
     <string name="charge_socket_type2_cable">Type 2 (w/ cable)</string>
     <string name="charge_socket_type2_combo">Type 2 combo</string>
@@ -921,4 +921,14 @@
     <string name="charge_socket_nacs">NACS</string>
     <string name="charge_socket_chademo">CHAdeMO</string>
     <string name="unknown_socket_type">unknown socket</string>
+    <string name="unknow_socket_type">unknown socket</string>
+    <string name="edit_socket_info_tooltip">Create new sockets or edit existing ones.</string>
+    <string name="charging_station_available_sockets">Available sockets</string>
+    <string name="charge_socket_unknown_other">Other or unknown</string>
+    <string name="charge_socket_count">Count</string>
+    <string name="charge_socket_power">Power (kW)</string>
+    <string name="editor_socket">Edit socket</string>
+    <string name="unknown_count">unknown</string>
+    <string name="error_value_must_be_positive">The value must be positive</string>
+    <string name="error_invalid_number">Invalid number</string>
 </resources>
