@@ -1,8 +1,8 @@
 #pragma once
 
+#include "indexer/feature_charge_sockets.hpp"
 #include "indexer/feature_data.hpp"
 #include "indexer/validate_and_format_contacts.hpp"
-#include "feature_helpers/feature_charge_sockets.hpp"
 
 #include <string>
 
@@ -46,7 +46,6 @@ struct MetadataTagProcessorImpl
   static std::string ValidateAndFormat_outdoor_seating(std::string v);
 
 protected:
-
   // stores information about charge sockets in charging stations.
   ChargeSocketsHelper m_chargeSockets;
 

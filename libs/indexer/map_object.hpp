@@ -1,5 +1,6 @@
 #pragma once
 
+#include "indexer/feature_charge_sockets.hpp"
 #include "indexer/feature_data.hpp"
 #include "indexer/feature_decl.hpp"
 #include "indexer/feature_meta.hpp"
@@ -9,8 +10,6 @@
 #include "geometry/latlon.hpp"
 
 #include "coding/string_utf8_multilang.hpp"
-
-#include "feature_helpers/feature_charge_sockets.hpp"
 
 #include <string>
 #include <vector>

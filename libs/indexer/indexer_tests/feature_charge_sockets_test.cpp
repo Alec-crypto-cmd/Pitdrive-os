@@ -1,6 +1,6 @@
-#include "testing/testing.hpp"
+#include "indexer/feature_charge_sockets.hpp"
 
-#include "feature_helpers/feature_charge_sockets.hpp"
+#include "testing/testing.hpp"
 
 namespace feature_charge_sockets_test
 {

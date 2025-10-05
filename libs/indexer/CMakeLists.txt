@@ -60,6 +60,8 @@ set(SRC
   feature_algo.cpp
   feature_algo.hpp
   feature_altitude.hpp
+  feature_charge_sockets.cpp
+  feature_charge_sockets.hpp
   feature_covering.cpp
   feature_covering.hpp
   feature_data.cpp
@@ -158,7 +160,6 @@ target_link_libraries(${PROJECT_NAME}
   geometry
   protobuf
   coding
-  feature_helpers
 )
 
 omim_add_test_subdirectory(indexer_tests)
