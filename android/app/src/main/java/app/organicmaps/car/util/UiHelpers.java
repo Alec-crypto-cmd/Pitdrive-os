@@ -124,7 +124,7 @@ public final class UiHelpers
 
     final Row.Builder builder = new Row.Builder();
     builder.setImage(
-        new CarIcon.Builder(IconCompat.createWithResource(context, R.drawable.ic_operating_hours)).build());
+        new CarIcon.Builder(IconCompat.createWithResource(context, R.drawable.ic_opening_hours)).build());
 
     if (isEmptyTT)
       builder.setTitle(ohStr);
