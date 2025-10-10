@@ -121,7 +121,7 @@
   <color name="yellow">#FFC800</color>
 
   <color name="elevation_profile_dot_enabled">#FF9600</color>
-  <color name="elevation_profile">#1E96F0</color>
+  <color name="elevation_profile">@color/base_accent</color>
 
   <color name="active_track_recording">#0057ff</color>
 

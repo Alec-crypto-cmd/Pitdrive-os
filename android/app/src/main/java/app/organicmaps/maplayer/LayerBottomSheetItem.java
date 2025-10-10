@@ -46,7 +46,7 @@ public class LayerBottomSheetItem
       break;
     case SUBWAY:
       drawableResId = R.drawable.ic_layers_subway;
-      buttonTextResource = R.string.button_layer_subway;
+      buttonTextResource = R.string.subway;
       break;
     case ISOLINES:
       drawableResId = R.drawable.ic_layers_isoline;
