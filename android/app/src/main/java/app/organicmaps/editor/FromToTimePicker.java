@@ -30,6 +30,7 @@ public class FromToTimePicker
   private MaterialTimePicker mToTimePicker;
   private MaterialTimePicker mFromTimePicker;
   private boolean mIsFromTimePicked;
+  private int mInputMode;
 
   public static void pickTime(@NonNull Fragment fragment,
                               @NonNull FromToTimePicker.OnPickListener listener,
@@ -64,6 +65,7 @@ public class FromToTimePicker
     mId = id;
 
     mIsFromTimePicked = false;
+    mInputMode = MaterialTimePicker.INPUT_MODE_CLOCK;
 
     mIs24HourFormat = DateUtils.is24HourFormat(mActivity);
     mResources = mActivity.getResources();
@@ -75,7 +77,7 @@ public class FromToTimePicker
   {
     if (mFromTimePicker != null)
     {
-      mFromTime = getHoursMinutes(mFromTimePicker);
+      saveState(mFromTimePicker, true);
       mFromTimePicker.dismiss();
     }
 
@@ -87,7 +89,7 @@ public class FromToTimePicker
   {
     if (mToTimePicker != null)
     {
-      mToTime = getHoursMinutes(mToTimePicker);
+      saveState(mToTimePicker, false);
       mToTimePicker.dismiss();
     }
 
@@ -108,7 +110,8 @@ public class FromToTimePicker
     timePicker.addOnPositiveButtonClickListener(view ->
     {
       mIsFromTimePicked = true;
-      mFromTime = getHoursMinutes(timePicker);
+      saveState(timePicker, true);
+      mFromTimePicker = null;
       showToTimePicker();
     });
 
@@ -126,6 +129,8 @@ public class FromToTimePicker
 
     timePicker.addOnNegativeButtonClickListener(view ->
     {
+      saveState(timePicker, false);
+      mToTimePicker = null;
       if (mIsFromTimePicked)
         showFromTimePicker();
       else
@@ -134,7 +139,7 @@ public class FromToTimePicker
 
     timePicker.addOnPositiveButtonClickListener(view ->
     {
-      mToTime = getHoursMinutes(timePicker);
+      saveState(timePicker, false);
       finishTimePicking(true);
     });
 
@@ -152,7 +157,7 @@ public class FromToTimePicker
     MaterialTimePicker.Builder builder = new MaterialTimePicker.Builder()
                                              .setTitleText(title)
                                              .setTimeFormat(mIs24HourFormat ? TimeFormat.CLOCK_24H : TimeFormat.CLOCK_12H)
-                                             .setInputMode(MaterialTimePicker.INPUT_MODE_CLOCK)
+                                             .setInputMode(mInputMode)
                                              .setTheme(R.style.MwmMain_MaterialTimePicker)
                                              .setHour((int) time.hours)
                                              .setMinute((int) time.minutes);
@@ -166,9 +171,18 @@ public class FromToTimePicker
     return builder.build();
   }
 
-  private HoursMinutes getHoursMinutes(@NonNull MaterialTimePicker picker)
+  private void saveState(@NonNull MaterialTimePicker timePicker, boolean isFromTime)
   {
-    return new HoursMinutes(picker.getHour(), picker.getMinute(), mIs24HourFormat);
+    mInputMode = timePicker.getInputMode();
+    if (isFromTime)
+      mFromTime = getHoursMinutes(timePicker);
+    else
+      mToTime = getHoursMinutes(timePicker);
+  }
+
+  private HoursMinutes getHoursMinutes(@NonNull MaterialTimePicker timePicker)
+  {
+    return new HoursMinutes(timePicker.getHour(), timePicker.getMinute(), mIs24HourFormat);
   }
 
   private void finishTimePicking(boolean isConfirmed)
