@@ -922,6 +922,9 @@ void Framework::PrepareToShutdown()
 
 void Framework::SaveViewport()
 {
+  if (m_routingManager.IsRoutingActive())
+    return;
+
   m2::AnyRectD rect;
   if (m_currentModelView.isPerspective())
   {
