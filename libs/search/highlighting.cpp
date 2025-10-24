@@ -50,10 +50,10 @@ void HighlightResult(QueryTokens const & tokens, strings::UniString const & pref
 
   // Highlight Title (potentially including branch)
   std::string titleForHighlighting = res.GetString();
+#if defined(OMIM_OS_IPHONE)
   std::string const & branch = res.GetBranch();
   
   // On iOS we append branch text to the title for highlighting if it's not already present.
-#if defined(OMIM_OS_IPHONE)
   if (!branch.empty() && titleForHighlighting.find(branch) == std::string::npos)
     titleForHighlighting += " " + branch;
 #endif
