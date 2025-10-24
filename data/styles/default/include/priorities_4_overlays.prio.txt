@@ -913,7 +913,7 @@ natural-wetland-tidalflat                           # caption z16- (also has are
 tourism-picnic_site                                 # icon z16- (also has caption(optional) z16-)
 === 1800
 
-building-train_station                              # caption z16- (also has area z14-)
+building-train_station                              # caption z17- (also has area z14-)
 railway-level_crossing                              # icon z17-
 === 1700
 
@@ -1266,10 +1266,10 @@ amenity-parking_entrance-permissive                 # icon z17- (also has captio
 emergency-emergency_ward_entrance                   # icon z16- (also has caption(optional) z18-)
 === 250
 
-building                                            # caption z16- (also has area z14-)
-building-garage                                     # caption z16- (also has area z14-)
+building                                            # caption z17- (also has area z14-)
+building-garage                                     # caption z17- (also has area z14-)
 building-guardhouse                                 # icon z18- (also has caption(optional) z18-, area z14-)
-building-has_parts                                  # caption z16- (also has area z14-)
+building-has_parts                                  # caption z17- (also has area z14-)
 power-plant                                         # icon z17- (also has area z13-)
 power-plant-coal                                    # icon z17- (also has area z13-)
 power-plant-gas                                     # icon z17- (also has area z13-)
