@@ -1526,3 +1526,4 @@
 "type.leisure.sports_centre.sport.field_hockey" = "Maahokikeskus";
 "type.leisure.sports_centre.sport.bowls" = "Keegli- ja bowlingukeskus";
 "type.disusedbusiness" = "Vaba äripind";
+"type.amenity.lounger" = "Rannatool";

@@ -888,4 +888,5 @@
     <string name="avoid_steps">Väldi treppe</string>
     <string name="offline_explanation_title">Ilma võrguühenduseta toimivad kaardid</string>
     <string name="offline_explanation_text">Selles piirkonnas liikumiseks ja teekonna juhatamiseks pead vajaliku kaardi alla laadima.\nVali allalaaditav kaart selle piirkonna kohta.</string>
+    <string name="list_description_empty">Kirjelduse lisamiseks muuda loendit</string>
 </resources>

@@ -1435,4 +1435,5 @@
     <string name="type.leisure.sports_centre.sport.volleyball">Võrkpallikeskus</string>
     <string name="type.leisure.sports_centre.sport.yoga">Joogakeskus</string>
     <string name="type.disusedbusiness">Vaba äripind</string>
+    <string name="type.amenity.lounger">Rannatool</string>
 </resources>

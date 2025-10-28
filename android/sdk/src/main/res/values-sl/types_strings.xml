@@ -117,4 +117,20 @@
     <string name="type.tourism.artwork.statue">Kip</string>
     <string name="type.tourism.attraction">Znamenitost</string>
     <string name="type.attraction.water_slide">Tobogan</string>
+    <string name="type.tourism.information.map">Turistični zemljevid</string>
+    <string name="type.amenity.ranger_station">Čuvajnica</string>
+    <string name="type.tourism.motel">Motel</string>
+    <string name="type.tourism.museum">Muzej</string>
+    <string name="type.tourism.picnic_site">Prostor za piknik</string>
+    <string name="type.tourism.theme_park">Tematski park</string>
+    <string name="type.tourism.zoo">Živalski vrt</string>
+    <string name="type.traffic_calming">Umirjanje prometa</string>
+    <string name="type.traffic_calming.bump">Ležeči policaj</string>
+    <string name="type.traffic_calming.hump">Hitrostna grbina</string>
+    <string name="type.waterway">Vodni tok</string>
+    <string name="type.waterway.canal">Kanal</string>
+    <string name="type.waterway.canal.tunnel">Kanalni predor</string>
+    <string name="type.waterway.fish_pass">Ribja steza</string>
+    <string name="type.waterway.dam">Jez</string>
+    <string name="type.barrier.ditch">Jarek</string>
 </resources>
