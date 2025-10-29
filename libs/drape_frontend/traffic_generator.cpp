@@ -101,7 +101,7 @@ void SubmitCircleStaticVertices(RoadClass roadClass, glsl::vec3 const & pivot, g
                                 glsl::vec2 const & uv, std::vector<TrafficCircleStaticVertex> & circlesGeometry)
 {
   // Here we use an equilateral triangle to render circle (incircle of a triangle).
-  static float constexpr kSqrt3 = sqrt(3.0f);
+  static float constexpr kSqrt3 = 1.732050808f;
   auto const p = glsl::vec4(pivot, static_cast<float>(roadClass));
   circlesGeometry.emplace_back(p, glsl::vec4(rightNormal, -kSqrt3, -1.0f), uv);
   circlesGeometry.emplace_back(p, glsl::vec4(rightNormal, kSqrt3, -1.0f), uv);

@@ -382,8 +382,8 @@ void RouteShape::PrepareMarkersGeometry(std::vector<SubrouteMarker> const & mark
 {
   ASSERT(!markers.empty(), ());
 
-  static float constexpr kSqrt3 = sqrt(3.0f);
-  static float constexpr kSqrt2 = sqrt(2.0f);
+  static float constexpr kSqrt3 = 1.732050808f;
+  static float constexpr kSqrt2 = 1.414213562f;
   static float constexpr kInnerRadius = 0.6f;
   static float constexpr kOuterRadius = 1.0f;
 

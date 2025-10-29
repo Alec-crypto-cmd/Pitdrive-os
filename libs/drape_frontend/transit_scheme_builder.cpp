@@ -118,7 +118,7 @@ void GenerateLineCaps(ref_ptr<dp::GraphicsContext> context, std::vector<SchemeSe
   for (auto const & segment : segments)
   {
     // Here we use an equilateral triangle to render a circle (incircle of a triangle).
-    static float constexpr kSqrt3 = sqrt(3.0f);
+    static float constexpr kSqrt3 = 1.732050808f;
     auto const offset = lineOffset * segment.m_rightNormal;
     auto const pivot = glsl::vec3(segment.m_p2, depth);
 
