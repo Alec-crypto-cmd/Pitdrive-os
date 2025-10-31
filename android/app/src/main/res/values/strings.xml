@@ -441,6 +441,14 @@
     <string name="opens_in">Opens in %s</string>
     <string name="closes_in">Closes in %s</string>
     <string name="closed">Closed</string>
+    <string name="opens_at">Opens at %s</string>
+    <string name="closes_at">Closes at %s</string>
+    <string name="opens_day_at">Opens %1$s at %2$s</string>
+    <string name="closes_day_at">Closes %1$s at %2$s</string>
+    <plurals name="minutes">
+      <item quantity="one">%d minute</item>
+      <item quantity="other">%d minutes</item>
+    </plurals>
     <!-- Used in the opening_hours fragment for the last checked date, eg. "Confirmed two weeks ago" -->
     <string name="hours_confirmed_time_ago">Confirmed %s</string>
     <!-- Used on the place page for the last checked date, eg. "Existence confirmed two weeks ago" -->
