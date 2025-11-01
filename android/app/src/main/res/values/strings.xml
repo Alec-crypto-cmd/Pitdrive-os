@@ -445,10 +445,6 @@
     <string name="closes_at">Closes at %s</string>
     <string name="opens_day_at">Opens %1$s at %2$s</string>
     <string name="closes_day_at">Closes %1$s at %2$s</string>
-    <plurals name="minutes">
-      <item quantity="one">%d minute</item>
-      <item quantity="other">%d minutes</item>
-    </plurals>
     <plurals name="minutes_short">
       <item quantity="one">%d min</item>
       <item quantity="other">%d min</item>
