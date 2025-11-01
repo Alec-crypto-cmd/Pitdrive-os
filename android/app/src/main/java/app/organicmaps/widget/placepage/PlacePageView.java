@@ -840,7 +840,7 @@ public class PlacePageView extends Fragment
     if (minsToNextState <= 60 && minsToNextState >= 0) // POI Opens/Closes in 60 mins • at 18:00
     {
       final String minsToChangeStr = getResources().getQuantityString(
-        R.plurals.minutes, Math.max(minsToNextState, 1), Math.max(minsToNextState, 1));
+        R.plurals.minutes_short, Math.max(minsToNextState, 1), Math.max(minsToNextState, 1));
       final String nextChangeFormatted = getString(isOpen ? R.string.closes_in : R.string.opens_in, minsToChangeStr);
       final ForegroundColorSpan nextChangeColor = isOpen ? colorYellow : colorRed;
 

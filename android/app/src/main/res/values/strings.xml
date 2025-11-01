@@ -449,6 +449,10 @@
       <item quantity="one">%d minute</item>
       <item quantity="other">%d minutes</item>
     </plurals>
+    <plurals name="minutes_short">
+      <item quantity="one">%d min</item>
+      <item quantity="other">%d min</item>
+    </plurals>
     <!-- Used in the opening_hours fragment for the last checked date, eg. "Confirmed two weeks ago" -->
     <string name="hours_confirmed_time_ago">Confirmed %s</string>
     <!-- Used on the place page for the last checked date, eg. "Existence confirmed two weeks ago" -->
