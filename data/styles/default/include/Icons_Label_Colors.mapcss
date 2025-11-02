@@ -87,6 +87,7 @@ node[tourism=wilderness_hut],
 {text-color: @hotel_label;text-halo-radius: 0.1;text-halo-opacity: 0.7;text-halo-color: @label_halo_light;}
 
 node[leisure=dance],
+node[amenity=dojo],
 node[leisure=fitness_centre],
 node[leisure=sports_centre],
 node[leisure=stadium],
