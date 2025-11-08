@@ -647,7 +647,11 @@ void Editor::UploadChanges(string const & oauthToken, ChangesetTags tags, Finish
               try
               {
                 XMLFeature osmFeature = changeset.GetMatchingNodeFeatureFromOSM(objCreateData.mercator);
-                if (objCreateData.mercator == osmFeature.GetMercatorCenter())
+
+                // precision of OSM coordinates (WGS 84), ~= 1 cm
+                constexpr double tolerance = 0.0000001;
+
+                if (AlmostEqualAbs(feature.GetCenter(), osmFeature.GetCenter(), tolerance))
                 {
                   changeset.AddChangesetTag("info:merged_same_location", "yes");
                   feature = osmFeature;
