@@ -1434,6 +1434,11 @@
     <string name="type.leisure.sports_centre.sport.volleyball">Complexe sportif</string>
     <string name="type.leisure.sports_centre.sport.yoga">Complexe sportif</string>
     <string name="type.leisure.fitness_centre.sport.yoga">Salle de yoga</string>
-    <string name="type.disusedbusiness">Locaux commerciaux libres</string>
+    <string name="type.disusedbusiness">Magasin vacant</string>
     <string name="type.amenity.lounger">Chaise longue</string>
+    <string name="type.amenity.boat_rental">Vente de bateau</string>
+    <string name="type.amenity.payment_centre">Centre de paiement</string>
+    <string name="type.amenity.mobile_money_agent">Agent d\'argent liquide</string>
+    <string name="type.leisure.indoor_play">Complexe de jeux intérieurs</string>
+    <string name="type.shop.telecommunication">Boutique télécom</string>
 </resources>

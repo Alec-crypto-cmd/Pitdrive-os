@@ -1527,3 +1527,8 @@
 "type.leisure.bandstand" = "Otevřený altán";
 "type.disusedbusiness" = "Neobsazený prostor";
 "type.amenity.lounger" = "Lehátko";
+"type.shop.telecommunication" = "Telekomunikační obchod";
+"type.amenity.payment_centre" = "Platební centrum";
+"type.amenity.mobile_money_agent" = "Mobilní peněžní agent";
+"type.amenity.boat_rental" = "Půjčovna lodí";
+"type.leisure.indoor_play" = "Vnitřní herní centrum";

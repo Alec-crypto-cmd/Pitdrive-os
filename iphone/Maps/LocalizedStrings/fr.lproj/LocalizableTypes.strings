@@ -714,7 +714,7 @@
 "type.leisure.recreation_ground" = "Aire de jeux";
 "type.leisure.sauna" = "Sauna";
 "type.leisure.slipway" = "Cale de mise à l’eau";
-"type.leisure.sports_centre" = "Centre sportif";
+"type.leisure.sports_centre" = "Complexe sportif";
 "type.sport.climbing" = "Escalade";
 "type.sport.yoga" = "Yoga";
 "type.leisure.stadium" = "Stade";
@@ -1332,7 +1332,7 @@
 "type.sport.soccer" = "Football";
 "type.sport.swimming" = "Natation";
 "type.sport.table_tennis" = "Tennis de table";
-"type.sport.tennis" = "Court de tennis";
+"type.sport.tennis" = "Tennis";
 "type.sport.volleyball" = "Volley-ball";
 "type.sport.10pin" = "Bowling";
 "type.sport.9pin" = "Bowling";
@@ -1524,6 +1524,11 @@
 "type.leisure.sports_centre.sport.scuba_diving" = "Complexe sportif";
 "type.leisure.sports_centre.sport.field_hockey" = "Complexe sportif";
 "type.leisure.sports_centre.sport.bowls" = "Complexe sportif";
-"type.disusedbusiness" = "Locaux commerciaux libres";
+"type.disusedbusiness" = "Magasin vacant";
 "type.leisure.sports_centre.sport.archery" = "Complexe sportif";
 "type.amenity.lounger" = "Chaise longue";
+"type.shop.telecommunication" = "Boutique télécom";
+"type.amenity.payment_centre" = "Centre de paiement";
+"type.amenity.mobile_money_agent" = "Agent d'argent liquide";
+"type.amenity.boat_rental" = "Vente de bateau";
+"type.leisure.indoor_play" = "Complexe de jeux intérieurs";
