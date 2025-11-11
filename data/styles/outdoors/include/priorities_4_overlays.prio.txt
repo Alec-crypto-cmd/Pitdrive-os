@@ -2375,6 +2375,7 @@ man_made-telescope                                  # icon z18- (also has captio
 
 amenity-waste_basket                                # icon z18- (also has caption(optional) z19-)
 emergency-fire_hydrant                              # icon z19- (also has caption(optional) z19-)
+emergency-life_ring                                 # icon z19- (also has caption(optional) z19-)
 power-substation                                    # icon z17- (also has caption(optional) z18-, area z13-)
 === -9990
 
@@ -2402,6 +2403,7 @@ amenity-loading_dock                                # icon z18- (also has captio
 # emergency-assembly_point                          # caption(optional) z18- (also has icon z18-)
 # emergency-defibrillator                           # caption(optional) z18- (also has icon z18-)
 # emergency-fire_hydrant                            # caption(optional) z19- (also has icon z19-)
+# emergency-life_ring                               # caption(optional) z19- (also has icon z19-)
 # entrance                                          # caption(optional) z19- (also has icon z17-)
 entrance-exit                                       # icon z17- (also has caption(optional) z19-)
 # entrance-exit                                     # caption(optional) z19- (also has icon z17-)

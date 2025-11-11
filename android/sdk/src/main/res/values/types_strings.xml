@@ -373,6 +373,7 @@
     <string name="type.emergency">Emergency</string>
     <string name="type.emergency.access_point">Emergency Rescue Point</string>
     <string name="type.emergency.assembly_point">Emergency Assembly Point</string>
+    <string name="type.emergency.life_ring">Lifebuoy</string>
     <string name="type.emergency.defibrillator">Defibrillator</string>
     <string name="type.emergency.fire_hydrant">Fire Hydrant</string>
     <string name="type.emergency.phone">Emergency Phone</string>

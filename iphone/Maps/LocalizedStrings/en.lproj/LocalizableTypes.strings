@@ -388,6 +388,7 @@
 "type.emergency" = "Emergency";
 "type.emergency.access_point" = "Emergency Rescue Point";
 "type.emergency.assembly_point" = "Emergency Assembly Point";
+"type.emergency.life_ring" = "Lifebuoy";
 "type.emergency.defibrillator" = "Defibrillator";
 "type.emergency.fire_hydrant" = "Fire Hydrant";
 "type.emergency.phone" = "Emergency Phone";

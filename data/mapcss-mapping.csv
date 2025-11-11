@@ -225,7 +225,7 @@ place|suburb;128;
 landuse|allotments;129;
 landuse|forest|coniferous;[landuse=forest][wood=coniferous],[landuse=forest][leaf_type=coniferous],[natural=wood][wood=coniferous],[natural=wood][leaf_type=coniferous];;name;int_name;130;
 landuse|forest|mixed;[landuse=forest][wood=mixed],[landuse=forest][leaf_type=mixed],[landuse=forest][leaf_cycle=mixed],[natural=wood][wood=mixed],[natural=wood][leaf_type=mixed],[natural=wood][leaf_cycle=mixed];;name;int_name;131;
-deprecated:natural|wood|mixed:01.2020;[natural=wood][wood=mixed],[natural=wood][leaf_type=mixed],[natural=wood][leaf_cycle=mixed];x;name;int_name;132;landuse|forest|mixed
+emergency|life_ring;132;
 sport|tennis;133;
 # ~730k usages.
 landuse|vineyard;134;

@@ -361,6 +361,7 @@
 "type.emergency" = "Notfall";
 "type.emergency.access_point" = "Rettungspunkt";
 "type.emergency.assembly_point" = "Notfall-Sammelpunkt";
+"type.emergency.life_ring" = "Rettungsring";
 "type.emergency.defibrillator" = "Defibrillator";
 "type.emergency.fire_hydrant" = "Hydrant";
 "type.emergency.phone" = "Notruftelefon";
