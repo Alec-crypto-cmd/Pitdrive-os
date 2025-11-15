@@ -1364,10 +1364,10 @@
     <string name="type.military">Militært</string>
     <string name="type.landuse.education">Utdanningsinstitusjon</string>
     <string name="type.man_made.telescope">Teleskop</string>
-    <string name="type.amenity.food_bank">Matsentral</string>
+    <string name="type.social_facility.food_bank">Matsentral</string>
     <string name="type.man_made.telescope.gamma">Teleskop (Gamma)</string>
     <string name="type.man_made.telescope.radio">Teleskop (Radio)</string>
-    <string name="type.amenity.soup_kitchen">Suppekjøkken</string>
+    <string name="type.social_facility.soup_kitchen">Suppekjøkken</string>
     <string name="type.amenity.car_pooling">Samkjøring</string>
     <string name="type.shop.telecommunication">Telekommunikasjonsbutikk</string>
     <string name="type.amenity.boat_rental">Båtutleie</string>

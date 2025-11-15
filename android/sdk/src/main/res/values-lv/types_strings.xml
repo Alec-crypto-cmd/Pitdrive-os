@@ -153,7 +153,7 @@
     <string name="type.man_made.telescope">Teleskops</string>
     <string name="type.man_made.telescope.optical">Teleskops (optiskais)</string>
     <string name="type.man_made.telescope.radio">Teleskops (radio)</string>
-    <string name="type.amenity.soup_kitchen">Zupas virtuve</string>
+    <string name="type.social_facility.soup_kitchen">Zupas virtuve</string>
     <string name="type.amenity.food_sharing">Ēdiena kopīgošana</string>
     <string name="type.emergency.life_ring">Glābšanas boja</string>
     <string name="type.emergency.defibrillator">Defibrillators</string>

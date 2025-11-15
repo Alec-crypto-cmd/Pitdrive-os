@@ -1449,6 +1449,6 @@
     <string name="type.man_made.telescope.gamma">Teleskop (Gamma)</string>
     <string name="type.man_made.observatory">Observatorium</string>
     <string name="type.amenity.payment_centre">Zahlungszentrum</string>
-    <string name="type.amenity.soup_kitchen">Suppenküche</string>
-    <string name="type.amenity.food_bank">Tafel</string>
+    <string name="type.social_facility.soup_kitchen">Suppenküche</string>
+    <string name="type.social_facility.food_bank">Tafel</string>
 </resources>

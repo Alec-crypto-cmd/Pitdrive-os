@@ -1490,7 +1490,7 @@
 "type.building.guardhouse" = "Security Booth";
 "type.emergency.access_point" = "Räddningspunkt";
 "type.emergency.life_ring" = "Livboj";
-"type.amenity.soup_kitchen" = "Soppkök";
+"type.social_facility.soup_kitchen" = "Soppkök";
 "type.man_made.observatory" = "Observatorium";
 "type.man_made.telescope" = "Teleskop";
 "type.amenity.boat_rental" = "Båtuthyrning";

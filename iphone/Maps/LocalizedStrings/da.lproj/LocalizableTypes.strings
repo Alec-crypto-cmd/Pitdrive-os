@@ -1497,8 +1497,8 @@
 "type.man_made.telescope.optical" = "Teleskop (Optisk)";
 "type.man_made.telescope.radio" = "Teleskop (Radio)";
 "type.amenity.food_sharing" = "Fødevarerdeling";
-"type.amenity.food_bank" = "Fødevarebank";
-"type.amenity.soup_kitchen" = "Suppekøkken";
+"type.social_facility.food_bank" = "Fødevarebank";
+"type.social_facility.soup_kitchen" = "Suppekøkken";
 "type.man_made.telescope" = "Teleskop";
 "type.amenity.give_box" = "Donationsbøsse";
 "type.man_made.telescope.gamma" = "Teleskop (Gamma)";

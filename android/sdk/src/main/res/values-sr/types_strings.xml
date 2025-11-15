@@ -1400,8 +1400,8 @@
     <string name="type.shop.lighting">Продавница расвете</string>
     <string name="type.amenity.give_box">Кутија за поклоне</string>
     <string name="type.amenity.food_sharing">Дељење хране</string>
-    <string name="type.amenity.food_bank">Банка хране</string>
-    <string name="type.amenity.soup_kitchen">Народна кухиња</string>
+    <string name="type.social_facility.food_bank">Банка хране</string>
+    <string name="type.social_facility.soup_kitchen">Народна кухиња</string>
     <string name="type.man_made.observatory">Опсерваторија</string>
     <string name="type.man_made.telescope">Телескоп</string>
     <string name="type.man_made.telescope.optical">Телескоп (оптички)</string>

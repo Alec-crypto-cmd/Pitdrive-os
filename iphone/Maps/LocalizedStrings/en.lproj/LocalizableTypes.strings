@@ -1548,8 +1548,8 @@
 
 /* https://wiki.openstreetmap.org/wiki/Key:social_facility */
 "type.amenity.social_facility" = "Social Facility";
-"type.amenity.soup_kitchen" = "Soup Kitchen";
-"type.amenity.food_bank" = "Food Bank";
+"type.social_facility.soup_kitchen" = "Soup Kitchen";
+"type.social_facility.food_bank" = "Food Bank";
 "type.amenity.food_sharing" = "Food Sharing";
 "type.amenity.give_box" = "Give Box";
 

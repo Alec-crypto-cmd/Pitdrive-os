@@ -1540,8 +1540,8 @@
 "type.leisure.indoor_play" = "Centro de Atividades Interior";
 "type.shop.telecommunication" = "Loja de Telecomunicação";
 "type.disusedbusiness" = "Establecimento Vazio";
-"type.amenity.soup_kitchen" = "Sopa Comunitária";
-"type.amenity.food_bank" = "Banco Alimentar";
+"type.social_facility.soup_kitchen" = "Sopa Comunitária";
+"type.social_facility.food_bank" = "Banco Alimentar";
 "type.amenity.food_sharing" = "Partilha de Comida";
 "type.amenity.give_box" = "Caixa de Doações";
 "type.shop.beauty.day_spa" = "Spa Diurno";

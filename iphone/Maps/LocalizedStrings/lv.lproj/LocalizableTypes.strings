@@ -1533,7 +1533,7 @@
 "type.man_made.telescope.optical" = "Teleskops (optiskais)";
 "type.man_made.telescope.radio" = "Teleskops (radio)";
 "type.amenity.food_sharing" = "Ēdiena kopīgošana";
-"type.amenity.soup_kitchen" = "Zupas virtuve";
+"type.social_facility.soup_kitchen" = "Zupas virtuve";
 "type.man_made.telescope" = "Teleskops";
 "type.man_made.telescope.gamma" = "Teleskops (Gamma)";
 "type.emergency.access_point" = "Ārkārtas glābšanas punkts";

@@ -1436,8 +1436,8 @@
     <string name="type.amenity.payment_centre">Centro de pagamentos</string>
     <string name="type.leisure.indoor_play">Centro de recreação interno</string>
     <string name="type.shop.telecommunication">Loja de Telecomunicação</string>
-    <string name="type.amenity.soup_kitchen">Restaurante popular</string>
-    <string name="type.amenity.food_bank">Banco de alimentos</string>
+    <string name="type.social_facility.soup_kitchen">Restaurante popular</string>
+    <string name="type.social_facility.food_bank">Banco de alimentos</string>
     <string name="type.amenity.food_sharing">Compartilhamento de alimentos</string>
     <string name="type.amenity.give_box">Caixa de doação</string>
     <string name="type.emergency.access_point">Ponto de Resgate de Emergência</string>

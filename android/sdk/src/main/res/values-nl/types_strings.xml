@@ -1443,8 +1443,8 @@
     <string name="type.leisure.sports_centre.sport.swimming">Zwemcentrum</string>
     <string name="type.shop.telecommunication">Telecommunicatiewinkel</string>
     <string name="type.disusedbusiness">Leegstand bedrijfspand</string>
-    <string name="type.amenity.soup_kitchen">Gaarkeuken</string>
-    <string name="type.amenity.food_bank">Voedselbank</string>
+    <string name="type.social_facility.soup_kitchen">Gaarkeuken</string>
+    <string name="type.social_facility.food_bank">Voedselbank</string>
     <string name="type.emergency.access_point">Verzamelpunt</string>
     <string name="type.leisure.fitness_centre.sport.yoga">Yogastudio</string>
     <string name="type.amenity.lounger">Lounge</string>

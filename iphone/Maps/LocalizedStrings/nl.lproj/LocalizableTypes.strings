@@ -1535,8 +1535,8 @@
 "type.leisure.sports_centre.sport.swimming" = "Zwemcentrum";
 "type.shop.telecommunication" = "Telecommunicatiewinkel";
 "type.disusedbusiness" = "Leegstand bedrijfspand";
-"type.amenity.soup_kitchen" = "Gaarkeuken";
-"type.amenity.food_bank" = "Voedselbank";
+"type.social_facility.soup_kitchen" = "Gaarkeuken";
+"type.social_facility.food_bank" = "Voedselbank";
 "type.leisure.fitness_centre.sport.yoga" = "Yogastudio";
 "type.amenity.lounger" = "Lounge";
 "type.amenity.payment_centre" = "Betaalkantoor";

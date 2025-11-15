@@ -1534,7 +1534,7 @@
 "type.man_made.telescope.gamma" = "Teleskop (prom. gamma)";
 "type.amenity.boat_rental" = "Wypożyczalnia łodzi";
 "type.amenity.food_sharing" = "Jadłodzielnia";
-"type.amenity.food_bank" = "Bank żywności";
-"type.amenity.soup_kitchen" = "Jadłodajnia";
+"type.social_facility.food_bank" = "Bank żywności";
+"type.social_facility.soup_kitchen" = "Jadłodajnia";
 "type.amenity.car_pooling" = "Car Pooling";
 "type.shop.telecommunication" = "Sklep dostawcy usług telekomunikacyjnych";

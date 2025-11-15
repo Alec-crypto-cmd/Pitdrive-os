@@ -1446,8 +1446,8 @@
     <string name="type.leisure.fitness_centre.sport.yoga">Студия Йоги</string>
     <string name="type.shop.telecommunication">Телекоммуникационный магазин</string>
     <string name="type.disusedbusiness">Вакантный бизнес</string>
-    <string name="type.amenity.soup_kitchen">Бесплатная столовая</string>
-    <string name="type.amenity.food_bank">Продовольственный банк</string>
+    <string name="type.social_facility.soup_kitchen">Бесплатная столовая</string>
+    <string name="type.social_facility.food_bank">Продовольственный банк</string>
     <string name="type.amenity.food_sharing">Обмен едой</string>
     <string name="type.amenity.give_box">Подарить коробку</string>
     <string name="type.amenity.bench.backless">Скамья без спинки</string>

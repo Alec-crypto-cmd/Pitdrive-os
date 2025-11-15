@@ -1536,9 +1536,9 @@
 "type.leisure.fitness_centre.sport.yoga" = "Студия Йоги";
 "type.shop.telecommunication" = "Телекоммуникационный магазин";
 "type.disusedbusiness" = "Вакантный бизнес";
-"type.amenity.soup_kitchen" = "Бесплатная столовая";
+"type.social_facility.soup_kitchen" = "Бесплатная столовая";
 "type.amenity.food_sharing" = "Обмен едой";
-"type.amenity.food_bank" = "Продовольственный банк";
+"type.social_facility.food_bank" = "Продовольственный банк";
 "type.amenity.give_box" = "Подарить коробку";
 "type.amenity.bench.backless" = "Скамья без спинки";
 "type.amenity.mobile_money_agent" = "Агент мобильных платежей";

@@ -1493,8 +1493,8 @@
 "type.man_made.telescope.optical" = "Телескоп (оптички)";
 "type.man_made.telescope.radio" = "Телескоп (радио)";
 "type.amenity.food_sharing" = "Дељење хране";
-"type.amenity.food_bank" = "Банка хране";
-"type.amenity.soup_kitchen" = "Народна кухиња";
+"type.social_facility.food_bank" = "Банка хране";
+"type.social_facility.soup_kitchen" = "Народна кухиња";
 "type.man_made.telescope" = "Телескоп";
 "type.amenity.give_box" = "Кутија за поклоне";
 "type.man_made.telescope.gamma" = "Телескоп (гама)";

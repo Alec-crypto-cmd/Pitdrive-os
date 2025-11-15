@@ -1360,7 +1360,7 @@
     <string name="type.amenity.bicycle_parking.covered">Cykelparkering under tak</string>
     <string name="type.emergency.life_ring">Livboj</string>
     <string name="type.emergency.access_point">Räddningspunkt</string>
-    <string name="type.amenity.soup_kitchen">Soppkök</string>
+    <string name="type.social_facility.soup_kitchen">Soppkök</string>
     <string name="type.man_made.observatory">Observatorium</string>
     <string name="type.man_made.telescope">Teleskop</string>
     <string name="type.amenity.boat_rental">Båtuthyrning</string>

@@ -1531,8 +1531,8 @@
 "type.man_made.telescope.optical" = "Optiline teleskoop";
 "type.man_made.telescope.radio" = "Raadioteleskoop";
 "type.amenity.food_sharing" = "Toidujagamine";
-"type.amenity.food_bank" = "Toidupank";
-"type.amenity.soup_kitchen" = "Supiköök";
+"type.social_facility.food_bank" = "Toidupank";
+"type.social_facility.soup_kitchen" = "Supiköök";
 "type.man_made.telescope" = "Teleskoop";
 "type.amenity.give_box" = "Annetuskast";
 "type.man_made.telescope.gamma" = "Gammateleskoop";

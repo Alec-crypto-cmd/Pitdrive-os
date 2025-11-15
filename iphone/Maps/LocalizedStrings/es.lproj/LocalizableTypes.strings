@@ -1538,9 +1538,9 @@
 "type.amenity.payment_centre" = "Centro de pagos";
 "type.emergency.life_ring" = "Salvavidas";
 "type.shop.telecommunication" = "Tienda de telecomunicaciones";
-"type.amenity.food_bank" = "Banco de alimentos";
+"type.social_facility.food_bank" = "Banco de alimentos";
 "type.emergency.access_point" = "Punto de rescate de emergencia";
 "type.amenity.food_sharing" = "Alimentos compartidos";
-"type.amenity.soup_kitchen" = "Comedor social";
+"type.social_facility.soup_kitchen" = "Comedor social";
 "type.amenity.give_box" = "Give Box";
 "type.leisure.indoor_play" = "Centro de actividades en interior";

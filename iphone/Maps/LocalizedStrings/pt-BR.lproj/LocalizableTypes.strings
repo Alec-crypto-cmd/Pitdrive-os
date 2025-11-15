@@ -1531,8 +1531,8 @@
 "type.man_made.telescope.optical" = "Telescópio (óptico)";
 "type.man_made.telescope.radio" = "Telescópio (rádio)";
 "type.amenity.food_sharing" = "Compartilhamento de alimentos";
-"type.amenity.food_bank" = "Banco de alimentos";
-"type.amenity.soup_kitchen" = "Restaurante popular";
+"type.social_facility.food_bank" = "Banco de alimentos";
+"type.social_facility.soup_kitchen" = "Restaurante popular";
 "type.man_made.telescope" = "Telescópio";
 "type.amenity.give_box" = "Caixa de doação";
 "type.man_made.telescope.gamma" = "Telescópio (gama)";

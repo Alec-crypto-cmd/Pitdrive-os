@@ -1448,10 +1448,10 @@
     <string name="type.amenity.payment_centre">Centro de pagos</string>
     <string name="type.emergency.life_ring">Salvavidas</string>
     <string name="type.shop.telecommunication">Tienda de telecomunicaciones</string>
-    <string name="type.amenity.food_bank">Banco de alimentos</string>
+    <string name="type.social_facility.food_bank">Banco de alimentos</string>
     <string name="type.emergency.access_point">Punto de rescate de emergencia</string>
     <string name="type.leisure.indoor_play">Centro de actividades en interior</string>
-    <string name="type.amenity.soup_kitchen">Comedor social</string>
+    <string name="type.social_facility.soup_kitchen">Comedor social</string>
     <string name="type.amenity.food_sharing">Alimentos compartidos</string>
     <string name="type.amenity.give_box">Give Box</string>
 </resources>

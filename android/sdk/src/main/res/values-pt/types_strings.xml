@@ -1450,8 +1450,8 @@
     <string name="type.leisure.indoor_play">Centro de Atividades Interior</string>
     <string name="type.shop.telecommunication">Loja de Telecomunicação</string>
     <string name="type.disusedbusiness">Establecimento Vazio</string>
-    <string name="type.amenity.soup_kitchen">Sopa Comunitária</string>
-    <string name="type.amenity.food_bank">Banco Alimentar</string>
+    <string name="type.social_facility.soup_kitchen">Sopa Comunitária</string>
+    <string name="type.social_facility.food_bank">Banco Alimentar</string>
     <string name="type.amenity.food_sharing">Partilha de Comida</string>
     <string name="type.amenity.give_box">Caixa de Doações</string>
     <string name="type.shop.beauty.day_spa">Spa Diurno</string>

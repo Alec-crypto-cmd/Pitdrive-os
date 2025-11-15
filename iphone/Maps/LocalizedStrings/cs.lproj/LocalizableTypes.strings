@@ -1538,7 +1538,7 @@
 "type.man_made.telescope.optical" = "Teleskop (optický)";
 "type.man_made.telescope.radio" = "Teleskop (rádio)";
 "type.amenity.food_sharing" = "Food sharing";
-"type.amenity.food_bank" = "Potravinová banka";
-"type.amenity.soup_kitchen" = "Vývařovna";
+"type.social_facility.food_bank" = "Potravinová banka";
+"type.social_facility.soup_kitchen" = "Vývařovna";
 "type.amenity.give_box" = "Give Box";
 "type.man_made.telescope.gamma" = "Teleskop (gamma)";
