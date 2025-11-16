@@ -1584,3 +1584,6 @@
 "type.shop.beauty.day_spa" = "Tages-Spa";
 "type.amenity.give_box" = "Spendenbox";
 "type.xmas.tree" = "Weihnachtsbaum";
+"type.natural.sand" = "Sand";
+"type.amenity.mobile_money_agent" = "Mobile Money Vertretung";
+"type.amenity.food_sharing" = "Food Sharing";
