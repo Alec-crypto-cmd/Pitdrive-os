@@ -222,6 +222,11 @@ if (PLATFORM_DESKTOP AND NOT WITH_SYSTEM_PROVIDED_3PARTY)
   include_directories("${PROJECT_BINARY_DIR}/3party/gflags/include")
 endif()
 
+# Android fails to find boost in many cases, this fixes it.
+if (PLATFORM_ANDROID)
+  include_directories("${OMIM_ROOT}/3party/boost")
+endif()
+
 # Used in qt/ and shaders/
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
