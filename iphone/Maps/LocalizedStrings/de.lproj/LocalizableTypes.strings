@@ -1577,4 +1577,9 @@
 "type.amenity.payment_centre" = "Zahlungszentrum";
 "type.social_facility.food_bank" = "Tafel";
 "type.social_facility.soup_kitchen" = "Suppenküche";
+"type.amenity.sailing_school" = "Segelschule";
+"type.amenity.flight_school" = "Flugschule";
+"type.amenity.prep_school" = "Nachhilfeschule";
+"type.shop.beauty.day_spa" = "Tages-Spa";
+"type.amenity.give_box" = "Spendenbox";
 "type.xmas.tree" = "Weihnachtsbaum";

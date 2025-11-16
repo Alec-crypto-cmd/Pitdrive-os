@@ -1489,5 +1489,10 @@
     <string name="type.amenity.payment_centre">Zahlungszentrum</string>
     <string name="type.social_facility.soup_kitchen">Suppenküche</string>
     <string name="type.social_facility.food_bank">Tafel</string>
+    <string name="type.amenity.flight_school">Flugschule</string>
+    <string name="type.amenity.sailing_school">Segelschule</string>
+    <string name="type.amenity.prep_school">Nachhilfeschule</string>
+    <string name="type.shop.beauty.day_spa">Tages-Spa</string>
+    <string name="type.amenity.give_box">Spendenbox</string>
     <string name="type.xmas.tree">Weihnachtsbaum</string>
 </resources>
