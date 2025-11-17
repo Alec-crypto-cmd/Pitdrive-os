@@ -517,7 +517,10 @@ void ApplyPointFeature::ProcessPointRules(SymbolRuleProto const * symbolRule, Ca
   {
     PoiSymbolViewParams params;
     FillCommonParams(params);
-    params.m_depthLayer = DepthLayer::OverlayLayer;
+    if (ftypes::IsUnderBuildingChecker::Instance()(m_f))
+      params.m_depthLayer = DepthLayer::OverlayUnderBuildingLayer;
+    else
+      params.m_depthLayer = DepthLayer::OverlayLayer;
     params.m_depthTestEnabled = false;
     params.m_depth = PriorityToDepth(symbolRule->priority(), drule::symbol, 0);
     params.m_symbolName = symbolRule->name();

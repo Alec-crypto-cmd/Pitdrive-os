@@ -280,6 +280,14 @@ public:
   uint32_t GetType() const { return m_types[0]; }
 };
 
+class IsUnderBuildingChecker : public BaseChecker
+{
+  IsUnderBuildingChecker();
+
+public:
+  DECLARE_CHECKER_INSTANCE(IsUnderBuildingChecker);
+};
+
 class IsIsolineChecker : public BaseChecker
 {
   IsIsolineChecker();

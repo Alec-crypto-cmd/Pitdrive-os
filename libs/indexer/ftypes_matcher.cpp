@@ -436,6 +436,12 @@ IsBuildingHasPartsChecker::IsBuildingHasPartsChecker() : BaseChecker(2 /* level 
   m_types.push_back(classif().GetTypeByPath({"building", "has_parts"}));
 }
 
+IsUnderBuildingChecker::IsUnderBuildingChecker()
+{
+  Classificator const & c = classif();
+  m_types.push_back(c.GetTypeByPath({"natural", "tree"}));
+}
+
 IsIsolineChecker::IsIsolineChecker() : BaseChecker(1 /* level */)
 {
   m_types.push_back(classif().GetTypeByPath({"isoline"}));
