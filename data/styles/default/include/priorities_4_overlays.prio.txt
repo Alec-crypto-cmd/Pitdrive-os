@@ -111,7 +111,7 @@ natural-water-lake                                  # caption z10- (also has are
 natural-water-reservoir                             # caption z10- (also has area z1-)
 === 6650
 
-barrier-toll_booth                                  # icon z12- (also has caption(optional) z14-)
+barrier-toll_booth                                  # icon z16- (also has caption(optional) z16-)
 === 6600
 
 historic-ruins                                      # icon z17- (also has caption(optional) z17-)
@@ -1420,7 +1420,7 @@ leisure-swimming_pool-private                       # icon z17- (also has captio
 # leisure-nature_reserve                            # caption(optional) z12-17 (also has icon z11-17, caption z18-, area z10-17)
 # === -3300
 
-# barrier-toll_booth                                # caption(optional) z14- (also has icon z12-)
+# barrier-toll_booth                                # caption(optional) z16- (also has icon z16-)
 # === -3400
 
 # historic-ruins                                    # caption(optional) z17- (also has icon z17-)

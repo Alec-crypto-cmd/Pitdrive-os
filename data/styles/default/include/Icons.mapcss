@@ -957,7 +957,6 @@ node|z16-[amenity=biergarten],
 /* 5.AMENITY (infrastructure) */
 
 node|z13-[leisure=stadium],
-node|z14-[barrier=toll_booth],
 node|z14-[amenity=university],
 node|z14-[amenity=place_of_worship],
 node|z14-[man_made=lighthouse],
@@ -981,6 +980,7 @@ node|z16-[barrier=kissing_gate],
 node|z16-[barrier=lift_gate],
 node|z16-[barrier=swing_gate],
 node|z16-[barrier=stile],
+node|z16-[barrier=toll_booth],
 node|z16-[barrier=turnstile],
 node|z17-[barrier=wicket_gate],
 node|z16-[barrier=cycle_barrier],
@@ -1521,9 +1521,7 @@ node|z13-14[man_made=lighthouse],
 node|z15-[man_made=lighthouse],
 {icon-image: lighthouse-m.svg;}
 
-node|z12-14[barrier=toll_booth],
-{icon-image: toll_booth-s.svg;}
-node|z15-[barrier=toll_booth],
+node|z16-[barrier=toll_booth],
 {icon-image: toll_booth-m.svg;}
 
 node|z14[barrier=border_control],
