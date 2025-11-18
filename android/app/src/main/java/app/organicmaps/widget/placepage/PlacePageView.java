@@ -31,6 +31,8 @@ import androidx.fragment.app.FragmentFactory;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+
+import app.organicmaps.BuildConfig;
 import app.organicmaps.MwmActivity;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
@@ -108,7 +110,6 @@ public class PlacePageView extends Fragment
   private static final String TRACK_SHARE_MENU_ID = "TRACK_SHARE_MENU_ID";
 
   private static final int SHORT_HORIZON_CLOSE_MIN = 60;
-
   private static final int SHORT_HORIZON_OPEN_MIN = 15;
 
   private static final List<CoordinatesFormat> visibleCoordsFormat =
@@ -831,12 +832,44 @@ public class PlacePageView extends Fragment
     final SpannableStringBuilder openStateString = new SpannableStringBuilder();
     final boolean isOpen = (poiState.state == OhState.State.Open); // False == Closed due to early exit for Unknown
     final long nextStateTime = isOpen ? poiState.nextTimeClosed : poiState.nextTimeOpen; // Unix time (seconds)
+
+    ZonedDateTime nextChangeLocal = null;
+    boolean hasFiniteNextChange = false;
+
     final long nowSec = System.currentTimeMillis() / 1000;
     final int minsToNextState = (int) ((nextStateTime - nowSec) / 60);
 
-    // NOTE: Timezone is currently device timezone. TODO: use feature-specific timezone.
-    final ZonedDateTime nextChangeLocal =
-      ZonedDateTime.ofInstant(Instant.ofEpochSecond(nextStateTime), ZoneId.systemDefault());
+    // Try to resolve a finite next-change time; handle 24/7 case
+    final boolean looksLike247 = "24/7".equals(ohStr.trim());
+    final int ONE_WEEK_MIN = 7 * 24 * 60;
+    final boolean noRealNextChange = looksLike247 || minsToNextState >= ONE_WEEK_MIN;
+
+    if (!noRealNextChange)
+    {
+      try
+      {
+        if (nextStateTime > 0 && nextStateTime < Long.MAX_VALUE / 2)
+        {
+          // NOTE: Timezone is currently device timezone. TODO: use feature-specific timezone.
+          nextChangeLocal = ZonedDateTime.ofInstant(
+              Instant.ofEpochSecond(nextStateTime), ZoneId.systemDefault()
+          );
+          hasFiniteNextChange = true;
+        }
+      }
+      catch (Throwable ignored) {}
+    }
+
+    if (!hasFiniteNextChange) // No valid next change
+    {
+      if (isOpen)
+        openStateString.append(getString(R.string.open_now), colorGreen, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+      else
+        openStateString.append(getString(R.string.closed_now), colorRed, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+      UiUtils.setTextAndHideIfEmpty(mTvOpenState, openStateString);
+      return;
+    }
 
     String localizedTimeString = OpenStateTextFormatter.formatHoursMinutes(
       nextChangeLocal.getHour(), nextChangeLocal.getMinute(), DateUtils.is24HourFormat(context));
