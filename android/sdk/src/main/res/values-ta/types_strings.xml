@@ -13,4 +13,25 @@
     <string name="type.aeroway.aerodrome.international">சர்வதேச விமான நிலையம்</string>
     <string name="type.aeroway.helipad">ஹெலிபேட்</string>
     <string name="type.aeroway.runway">ஓடுதளம்</string>
+    <string name="type.aeroway.terminal">முனையம்</string>
+    <string name="type.amenity.arts_centre">கலைக் கூடம்</string>
+    <string name="type.amenity.bank">வங்கி</string>
+    <string name="type.amenity.bar">பார்</string>
+    <string name="type.amenity.bench">பெஞ்ச்</string>
+    <string name="type.amenity.bicycle_parking">மிதிவண்டி நிறுத்துமிடம்</string>
+    <string name="type.amenity.bicycle_parking.covered">நிழற்கூட மிதிவண்டி நிறுத்துமிடம்</string>
+    <string name="type.amenity.boat_rental">வாடகை படகு</string>
+    <string name="type.amenity.bicycle_rental">மிதிவண்டி வாடகை</string>
+    <string name="type.amenity.bicycle_repair_station">மிதிவண்டி பழுது நிலையம்</string>
+    <string name="type.amenity.bus_station">பேருந்து நிலையம்</string>
+    <string name="type.amenity.cafe">கஃபே</string>
+    <string name="type.amenity.car_rental">வாடகை கார்</string>
+    <string name="type.amenity.motorcycle_rental">வாடகை இருசக்கர மோட்டார் வாகனம்</string>
+    <string name="type.amenity.car_sharing">கார் பகிர்வு</string>
+    <string name="type.amenity.car_wash">கார் கழுவுதல்</string>
+    <string name="type.man_made.telescope">தொலைநோக்கி</string>
+    <string name="type.man_made.telescope.optical">தொலைநோக்கி (கண்ணாடி)</string>
+    <string name="type.man_made.telescope.radio">தொலைநோக்கி (ரேடியோ)</string>
+    <string name="type.amenity.gambling">சூதாட்டம்</string>
+    <string name="type.amenity.charging_station">சார்ஜிங் நிலையம்</string>
 </resources>
