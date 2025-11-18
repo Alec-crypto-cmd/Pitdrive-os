@@ -1728,13 +1728,12 @@ node|z17-[amenity=telephone]
 node|z17-[emergency=phone]
 {icon-image: emergency-phone-m.svg; text-offset: 1;}
 
-
-node|z16-[amenity=recycling][recycling_type=centre],
-{icon-image: recycling-centre-m.svg;}
-
 node|z17-[amenity=recycling],
 node|z17-[amenity=waste_transfer_station],
 {icon-image: recycling-m.svg;}
+
+node|z16-[amenity=recycling][recycling_type=centre],
+{icon-image: recycling-centre-m.svg;}
 
 node|z17-[power=plant],
 /* Skip individual solar generators, because there are a lot of mapped panels */
