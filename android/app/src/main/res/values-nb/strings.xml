@@ -297,7 +297,7 @@
     <!-- location service disabled -->
     <string name="enable_location_services">Aktiver posisjonstjenester</string>
     <string name="save">Lagre</string>
-    <string name="create">opprett</string>
+    <string name="create">Opprett</string>
     <!-- red color -->
     <string name="red">Rød</string>
     <!-- yellow color -->

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <string name="core_my_position">Mia Pozicio</string>
+</resources>

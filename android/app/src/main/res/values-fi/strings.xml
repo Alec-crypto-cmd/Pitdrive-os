@@ -892,4 +892,15 @@
     <string name="offline_explanation_text">Alueen katseluun ja navigointiin tarvitaan kartta.\nLataa karttoja alueille, joille haluat matkustaa.</string>
     <string name="charge_socket_nacs">NACS</string>
     <string name="charge_socket_chademo">CHAdeMO</string>
+    <string name="avoid_paved">Vältä päällystettyjä teitä</string>
+    <string name="opens_at">Avautuu %s</string>
+    <string name="closes_at">Sulkeutuu %s</string>
+    <string name="opens_day_at">Avautuu %1$s klo %2$s</string>
+    <string name="closes_day_at">Sulkeutuu %1$s klo %2$s</string>
+    <plurals name="minutes_short">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string name="editor_submit">Lähetä</string>
+    <string name="list_description_empty">Muokkaa listaa lisätäksesi kuvauksen</string>
 </resources>

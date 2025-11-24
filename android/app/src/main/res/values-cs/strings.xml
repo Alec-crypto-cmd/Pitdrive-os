@@ -290,7 +290,7 @@
     <!-- location service disabled -->
     <string name="enable_location_services">Prosím, povolte Služby určování polohy</string>
     <string name="save">Uložit</string>
-    <string name="create">vytvořit</string>
+    <string name="create">Vytvořit</string>
     <!-- red color -->
     <string name="red">Červená</string>
     <!-- yellow color -->

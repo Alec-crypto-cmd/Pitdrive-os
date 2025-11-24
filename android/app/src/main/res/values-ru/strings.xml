@@ -27,7 +27,7 @@
     <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
     <string name="limited_accuracy">Точность местоположения ограничена</string>
     <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
-    <string name="precise_location_is_disabled_long_text">Включите точное определение местоположения в настройках</string>
+    <string name="precise_location_is_disabled_long_text">Для обеспечения точной навигации включите определение точного местоположения в настройках</string>
     <!-- View and button titles for accessibility -->
     <string name="zoom_to_country">Показать на карте</string>
     <!-- Message to display at the center of the screen when the country download has failed -->

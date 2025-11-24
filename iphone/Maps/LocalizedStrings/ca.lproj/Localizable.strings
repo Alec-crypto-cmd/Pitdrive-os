@@ -1093,3 +1093,4 @@
 "pref_maplanguage_local" = "Local Language";
 "existence_confirmed_time_ago" = "Existence confirmed %@";
 "hours_confirmed_time_ago" = "Confirmed %@";
+"offline_explanation_title" = "Mapes sense Connexió";

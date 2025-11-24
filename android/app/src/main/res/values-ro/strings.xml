@@ -879,4 +879,5 @@
     <string name="avoid_paved">Evită drumurile pavate</string>
     <string name="avoid_steps">Evită treptele</string>
     <string name="offline_explanation_text">O hartă trebuie descărcată ca să vezi și si să nevighezi prin zonă.\nDescarcă hărți pentru zonele în care vrei să mergi.</string>
+    <string name="offline_explanation_title">Hărti Offline</string>
 </resources>

@@ -700,8 +700,8 @@
 "editor_share_to_all_dialog_title" = "Souhaitez-vous l’envoyer à tous les utilisateurs ?";
 
 /* Dialog before publishing the modifications to the public map. */
-"editor_share_to_all_dialog_message_1" = "Assurez-vous de n’avoir pas saisi de données personnelles.";
-"editor_share_to_all_dialog_message_2" = "Les contributeurs d’OpenStreetMap vérifieront vos modifications et vous contacteront s’ils ont des questions.";
+"editor_share_to_all_dialog_message_1" = "Assurez-vous de ne pas avoir saisi de données personnelles.";
+"editor_share_to_all_dialog_message_2" = "Les contributeurs OpenStreetMap vérifieront vos modifications et vous contacteront s’ils ont des questions.";
 "navigation_stop_button" = "Stop";
 
 /* iOS dialog for the case when recent track recording is on and the app comes back from background */
@@ -868,7 +868,7 @@
 "dialog_routing_rebuild_for_vehicle_carplay" = "L’itinéraire sera changé en mode Voiture";
 "not_all_shown_bookmarks_carplay" = "Tous les signets ne sont pas affichés";
 "switch_to_phone_bookmarks_carplay" = "Basculer sur le téléphone pour voir tous les signets";
-"ok" = "Ok";
+"ok" = "OK";
 "speedcams_alert_title_carplay_1" = "Radars de vitesse";
 "speedcams_alert_title_carplay_2" = "Avertissements des radars de vitesse";
 "download_map_carplay" = "Téléchargez des cartes dans l’application CoMaps sur votre appareil";
