@@ -355,8 +355,7 @@ public class EditorFragment extends BaseMwmFragment implements View.OnClickListe
     {
       hasChargeSockets = hasChargeSockets || (type == Metadata.MetadataType.FMD_CHARGE_SOCKETS.toInt());
     }
-    // Hide socket until https://codeberg.org/comaps/comaps/issues/2368 is fixed
-    //UiUtils.showIf(hasChargeSockets, mCardChargingStation);
+    UiUtils.showIf(hasChargeSockets, mCardChargingStation);
 
     setCardVisibility(mCardDetails, mDetailsBlocks, editableDetails);
     setCardVisibility(mCardSocialMedia, mSocialMediaBlocks, editableDetails);
