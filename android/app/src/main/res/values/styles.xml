@@ -365,6 +365,7 @@
   </style>
 
   <style name="MwmWidget.ExtendedFAB" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+    <item name="android:minHeight">30dp</item>
     <item name="iconPadding">4dp</item>
     <item name="iconSize">20dp</item>
     <item name="iconTint">?accentButtonTextColor</item>
