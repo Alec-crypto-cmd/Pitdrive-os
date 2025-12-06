@@ -1506,8 +1506,9 @@ void QueryParams::ClearStreetIndices()
       char const * arr[] = {
           "a",  "and", "s",   "the",                       // English
           "am", "an",  "auf", "der", "im",  "und", "zum",  // German
-          "as", "d",   "da",  "de",  "del", "di",  "do",  "du", "e", "el",
-          "et", "la",  "las", "le",  "les", "los", "o",   "os", "y",  // French, Spanish, Italian
+          "as", "d", "da", "das", "de", "del", "di", "do",
+          "dos", "du", "e", "el", "et", "la",  "las", "le",
+          "les", "los", "o",   "os", "y",                  // French, Italian, Portuguese, Spanish
           "в",  "и",   "на",  "я"                                     // Cyrillic
       };
       for (char const * s : arr)
