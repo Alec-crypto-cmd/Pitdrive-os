@@ -601,12 +601,6 @@ bool ValidateBlueskyPage(string const & page)
   return false;
 }
 
-bool isSocialContactTag(string_view tag)
-{
-  return tag == kInstagram || tag == kFacebook || tag == kTwitter || tag == kVk || tag == kLine || tag == kFediverse ||
-         tag == kBluesky || tag == kPanoramax;
-}
-
 bool isSocialContactTag(MapObject::MetadataID const metaID)
 {
   return metaID == MapObject::MetadataID::FMD_CONTACT_INSTAGRAM ||
@@ -618,35 +612,6 @@ bool isSocialContactTag(MapObject::MetadataID const metaID)
 
 // Functions ValidateAndFormat_{facebook,instagram,twitter,vk}(...) by default strip domain name
 // from OSM data and user input. This function prepends domain name to generate full URL.
-string socialContactToURL(string_view tag, string_view value)
-{
-  ASSERT(!value.empty(), ());
-
-  if (tag == kInstagram)
-    return string{kUrlInstagram}.append(value);
-  if (tag == kFacebook)
-    return string{kUrlFacebook}.append(value);
-  if (tag == kTwitter)
-    return string{kUrlTwitter}.append(value);
-  if (tag == kVk)
-    return string{kUrlVk}.append(value);
-  if (tag == kFediverse)
-    return fediverseHandleToUrl(value);
-  if (tag == kBluesky)  // In future
-    return string{kUrlBluesky}.append(value);
-  if (tag == kLine)
-  {
-    if (value.find('/') == string::npos)  // 'value' is a username.
-      return string{kUrlLine}.append(value);
-    else  // 'value' is an URL.
-      return string{kHttps}.append(value);
-  }
-  if (tag == kPanoramax)
-    return string{kUrlPanoramax}.append(value);
-
-  return string{value};
-}
-
 string socialContactToURL(MapObject::MetadataID metaID, string_view value)
 {
   ASSERT(!value.empty(), ());
