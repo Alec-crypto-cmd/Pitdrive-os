@@ -10,6 +10,7 @@ import android.os.Looper;
 import android.provider.Settings;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
+import android.speech.tts.Voice;
 import android.text.TextUtils;
 import android.util.Pair;
 import androidx.annotation.NonNull;
@@ -280,13 +281,16 @@ public enum TtsPlayer
 
   public Locale getVoiceLocale()
   {
-    return mTts.getVoice().getLocale();
+    if (INSTANCE.mTts == null)
+      return null;
+    Voice voice = INSTANCE.mTts.getVoice();
+    return voice != null ? voice.getLocale() : null;
   }
 
   public String getLanguageDisplayName()
   {
     Locale locale = getVoiceLocale();
-    return locale.getDisplayName(locale);
+    return locale != null ? locale.getDisplayName(locale) : null;
   }
 
   public void speak(String textToSpeak)

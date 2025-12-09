@@ -1818,9 +1818,17 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (Config.isTtsMessageDelivered())
       return;
 
-    String navigationStartMessage = getResources().getString(R.string.navigation_start_tts_message);
-    navigationStartMessage += TtsPlayer.INSTANCE.getLanguageDisplayName();
-    Toast.makeText(this, navigationStartMessage, Toast.LENGTH_LONG).show();
+    String languageDisplayName = TtsPlayer.INSTANCE.getLanguageDisplayName();
+
+    if (languageDisplayName != null)
+    {
+      String navigationStartMessage = getResources().getString(R.string.navigation_start_tts_message);
+      navigationStartMessage += languageDisplayName;
+      Toast.makeText(this, navigationStartMessage, Toast.LENGTH_LONG).show();
+    }
+    else
+      Toast.makeText(this, getResources().getString(R.string.navigation_start_tts_disabled_message), Toast.LENGTH_LONG)
+          .show();
 
     Config.setTtsMessageDelivered();
   }
