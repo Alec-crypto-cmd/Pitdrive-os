@@ -359,6 +359,8 @@
       android:label="@string/app_name"
       android:targetActivity="app.organicmaps.SplashActivity"
       android:exported="true">
+    </activity-alias>
+
     <activity android:name="app.organicmaps.LoginActivity"
         android:exported="true"
         android:screenOrientation="portrait"
@@ -368,14 +370,6 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-
-    <activity-alias
-      android:name="app.organicmaps.DownloadResourcesActivity"
-      android:label="@string/app_name"
-      android:targetActivity="app.organicmaps.SplashActivity"
-      android:exported="true">
-
-    </activity-alias>
 
     <activity
         android:name="app.organicmaps.MwmActivity"
