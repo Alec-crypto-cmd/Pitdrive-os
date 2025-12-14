@@ -105,6 +105,8 @@
     <string name="measurement_units">Measurement units</string>
     <!-- Detailed description of Measurement Units settings button -->
     <string name="measurement_units_summary">Choose between miles and kilometers</string>
+    <string name="pref_user_name_title">My Rider Name</string>
+    <string name="pref_user_name_summary">Name displayed to other riders</string>
 
     <!-- SECTION: Search categories -->
     <!-- Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat! -->

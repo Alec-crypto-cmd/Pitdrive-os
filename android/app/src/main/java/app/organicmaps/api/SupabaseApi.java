@@ -21,4 +21,9 @@ public interface SupabaseApi {
             @Header("Prefer") String prefer,
             @Body JsonObject locationData
     );
+    @retrofit2.http.GET("rest/v1/locations?select=*")
+    Call<java.util.List<JsonObject>> getLocations(
+            @Header("apikey") String apiKey,
+            @Header("Authorization") String token
+    );
 }

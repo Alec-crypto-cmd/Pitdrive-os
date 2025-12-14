@@ -70,6 +70,7 @@ import app.organicmaps.leftbutton.LeftButton;
 import app.organicmaps.leftbutton.LeftButtonsHolder;
 import app.organicmaps.leftbutton.LeftToggleButton;
 import app.organicmaps.location.TrackRecordingService;
+import app.organicmaps.location.UserTracker;
 import app.organicmaps.maplayer.MapButtonsController;
 import app.organicmaps.maplayer.MapButtonsViewModel;
 import app.organicmaps.maplayer.ToggleMapLayerFragment;
@@ -246,6 +247,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
   private boolean mRemoveDisplayListener = true;
   private static int mLastUiMode = Configuration.UI_MODE_TYPE_UNDEFINED;
+  
+  private UserTracker mUserTracker;
 
   public interface LeftAnimationTrackListener
   {
@@ -552,6 +555,19 @@ public class MwmActivity extends BaseMwmFragmentActivity
       onRenderingInitializationFinished();
 
     backupRunner = new PeriodicBackupRunner(this);
+    mUserTracker = new UserTracker(this);
+  }
+
+  @Override
+  protected void onResume() {
+      super.onResume();
+      if (mUserTracker != null) mUserTracker.start();
+  }
+
+  @Override
+  protected void onPause() {
+      super.onPause();
+      if (mUserTracker != null) mUserTracker.stop();
   }
 
   private void onSettingsResult(ActivityResult activityResult)

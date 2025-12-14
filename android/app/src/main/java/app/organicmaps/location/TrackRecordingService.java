@@ -284,7 +284,12 @@ public class TrackRecordingService extends Service implements LocationListener
       body.addProperty("latitude", location.getLatitude());
       body.addProperty("longitude", location.getLongitude());
       body.addProperty("speed", location.getSpeed());
+      body.addProperty("speed", location.getSpeed());
       body.addProperty("altitude", location.getAltitude());
+      
+      androidx.preference.PreferenceManager.getDefaultSharedPreferences(this);
+      String userName = androidx.preference.PreferenceManager.getDefaultSharedPreferences(this).getString(getString(R.string.pref_user_name), "Rider");
+      body.addProperty("user_name", userName);
 
       // Bearer token
       String authHeader = "Bearer " + token;
