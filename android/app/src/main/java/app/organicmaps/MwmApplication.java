@@ -35,6 +35,12 @@ import app.organicmaps.sdk.util.ConnectionState;
 import app.organicmaps.sdk.util.log.Logger;
 import app.organicmaps.util.ThemeSwitcher;
 import app.organicmaps.util.Utils;
+import app.organicmaps.sdk.settings.UnitLocale;
+import app.organicmaps.sdk.util.PowerManagment;
+import app.organicmaps.sdk.Framework;
+import app.organicmaps.sdk.routing.RoutingOptions;
+import app.organicmaps.sdk.settings.RoadType;
+import app.organicmaps.sdk.util.NetworkPolicy;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 
@@ -148,11 +154,45 @@ public class MwmApplication extends Application implements Application.ActivityL
   public boolean initOrganicMaps(@NonNull Runnable onComplete) throws IOException
   {
     return mOrganicMaps.init(() -> {
-      ThemeSwitcher.INSTANCE.initialize(this);
+       ThemeSwitcher.INSTANCE.initialize(this);
       ThemeSwitcher.INSTANCE.restart(false);
+      applyCustomDefaults();
       ProcessLifecycleOwner.get().getLifecycle().addObserver(mProcessLifecycleObserver);
       onComplete.run();
     });
+  }
+
+  private void applyCustomDefaults()
+  {
+    if (Config.isFirstLaunch(this))
+    {
+       // Units: Kilometers (Metric)
+       UnitLocale.setUnits(UnitLocale.UNITS_METRIC);
+
+       // Routing Options
+       RoutingOptions.addOption(RoadType.Toll);       // Mautstraßen vermeiden
+       RoutingOptions.addOption(RoadType.Paved);      // Befestigte Straßen vermeiden
+       RoutingOptions.addOption(RoadType.Ferry);      // Fähren vermeiden
+       RoutingOptions.addOption(RoadType.Motorway);   // Autobahn vermeiden
+
+       // Theme: Light (Default)
+       Config.UiTheme.setUiThemeSettings(Config.UiTheme.DEFAULT);
+
+       // Mobile Data: Always Ask
+       Config.setUseMobileDataSettings(NetworkPolicy.Type.ASK);
+
+       // Power Management: Auto (Low Battery)
+       PowerManagment.setScheme(PowerManagment.AUTO);
+
+       // Voice: Off
+       Config.TTS.setEnabled(false);
+
+       // 3D Buildings and 3D Mode
+       Framework.nativeSet3dMode(true, true);
+       
+       // Auto Zoom
+       Framework.nativeSetAutoZoomEnabled(true);
+    }
   }
 
   private final LifecycleObserver mProcessLifecycleObserver = new DefaultLifecycleObserver() {

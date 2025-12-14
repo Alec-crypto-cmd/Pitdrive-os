@@ -29,6 +29,7 @@
       android:title="@string/pref_zoom_title"
       app:singleLineTitle="false"
       android:summary="@string/pref_zoom_summary"
+      android:defaultValue="false"
       android:widgetLayout="@layout/preference_switch"
       android:order="2"/>
     <ListPreference
@@ -41,6 +42,7 @@
       android:key="@string/pref_3d_buildings"
       android:title="@string/pref_map_3d_buildings_title"
       app:singleLineTitle="false"
+      android:defaultValue="true"
       android:widgetLayout="@layout/preference_switch"
       android:order="4"/>
     <SwitchPreferenceCompat
@@ -48,6 +50,7 @@
       android:title="@string/autodownload"
       app:icon="@drawable/ic_download_st"
       app:singleLineTitle="false"
+      android:defaultValue="true"
       android:widgetLayout="@layout/preference_switch"
       android:order="5"/>
     <SwitchPreferenceCompat
@@ -94,7 +97,7 @@
        app:icon="@drawable/ic_browse_activity"
        app:singleLineTitle="false"
        android:summary="@string/enable_logging_warning_message"
-       android:defaultValue="false"
+       android:defaultValue="true"
        android:widgetLayout="@layout/preference_switch"
        android:order="11"/>
     <SwitchPreferenceCompat
@@ -116,12 +119,14 @@
       android:title="@string/pref_map_3d_title"
       app:icon="@drawable/ic_three_d_rotation"
       app:singleLineTitle="false"
+      android:defaultValue="true"
       android:widgetLayout="@layout/preference_switch"
       android:order="1"/>
     <SwitchPreferenceCompat
       android:key="@string/pref_auto_zoom"
       android:title="@string/pref_map_auto_zoom"
       app:singleLineTitle="false"
+      android:defaultValue="true"
       android:widgetLayout="@layout/preference_switch"
       android:order="2"/>
     <Preference
@@ -178,7 +183,7 @@
         android:title="@string/enable_keep_screen_on"
         app:singleLineTitle="false"
         android:summary="@string/enable_keep_screen_on_description"
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:widgetLayout="@layout/preference_switch"
         android:order="4"/>
     <SwitchPreferenceCompat
