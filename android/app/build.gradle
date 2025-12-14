@@ -27,7 +27,7 @@ def getCommitMessage() {
 }
 
 project.ext.appId = 'app.comaps'
-project.ext.appName = 'CoMaps'
+project.ext.appName = 'Bike OS'
 
 
 java {
