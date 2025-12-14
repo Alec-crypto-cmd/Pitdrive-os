@@ -361,6 +361,10 @@ dependencies {
   androidTestImplementation libs.androidx.test.junit
   testImplementation libs.junit
   testImplementation libs.mockito.core
+  implementation libs.retrofit
+  implementation libs.converter.gson
+  implementation libs.okhttp
+  implementation libs.logging.interceptor
 }
 
 android.applicationVariants.all { variant ->

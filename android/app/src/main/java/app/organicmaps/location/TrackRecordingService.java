@@ -32,6 +32,15 @@ import app.organicmaps.sdk.location.TrackRecorder;
 import app.organicmaps.sdk.util.LocationUtils;
 import app.organicmaps.sdk.util.log.Logger;
 
+import android.content.SharedPreferences;
+import com.google.gson.JsonObject;
+import app.organicmaps.api.SupabaseApi;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class TrackRecordingService extends Service implements LocationListener
 {
   public static final String TRACK_REC_CHANNEL_ID = "TRACK RECORDING";
@@ -251,5 +260,47 @@ public class TrackRecordingService extends Service implements LocationListener
 
       NotificationManagerCompat.from(this).notify(TRACK_REC_NOTIFICATION_ID, getNotificationBuilder(this).build());
     }
+
+    sendLocationToSupabase(location);
+  }
+
+  private void sendLocationToSupabase(Location location) {
+      SharedPreferences prefs = getSharedPreferences("app_prefs", MODE_PRIVATE);
+      String token = prefs.getString("supabase_token", null);
+      if (token == null) return;
+
+      String SUPABASE_URL = "https://fiuuefswkunqrkhayfer.supabase.co/";
+      String SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZpdXVlZnN3a3VucXJraGF5ZmVyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU3MTE4MzEsImV4cCI6MjA4MTI4NzgzMX0.CsDjN1QXm611iGlJDdQjUlcufhnkpJ6wQVOJjSJ-wPA";
+
+      Retrofit retrofit = new Retrofit.Builder()
+              .baseUrl(SUPABASE_URL)
+              .addConverterFactory(GsonConverterFactory.create())
+              .build();
+
+      SupabaseApi api = retrofit.create(SupabaseApi.class);
+
+      JsonObject body = new JsonObject();
+      body.addProperty("user_id", prefs.getString("supabase_user_id", ""));
+      body.addProperty("latitude", location.getLatitude());
+      body.addProperty("longitude", location.getLongitude());
+      body.addProperty("speed", location.getSpeed());
+      body.addProperty("altitude", location.getAltitude());
+
+      // Bearer token
+      String authHeader = "Bearer " + token;
+
+      api.logLocation(SUPABASE_KEY, authHeader, "return=minimal", body).enqueue(new Callback<Void>() {
+          @Override
+          public void onResponse(Call<Void> call, Response<Void> response) {
+              if (!response.isSuccessful()) {
+                  Logger.e(TAG, "Failed to log location: " + response.code());
+              }
+          }
+
+          @Override
+          public void onFailure(Call<Void> call, Throwable t) {
+              Logger.e(TAG, "Network error logging location", t);
+          }
+      });
   }
 }
